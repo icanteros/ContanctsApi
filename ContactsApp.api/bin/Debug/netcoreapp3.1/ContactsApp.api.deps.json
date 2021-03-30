@@ -26,6 +26,7 @@
         "dependencies": {
           "Bogus": "33.0.2",
           "Microsoft.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
           "Swashbuckle.AspNetCore": "6.1.1",

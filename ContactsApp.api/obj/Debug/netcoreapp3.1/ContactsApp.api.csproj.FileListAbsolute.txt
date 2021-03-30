@@ -60,9 +60,10 @@ C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\bin\Debug\netcoreapp3.1\
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\bin\Debug\netcoreapp3.1\ContactsApp.api.runtimeconfig.dev.json
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\bin\Debug\netcoreapp3.1\ContactsApp.api.dll
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\bin\Debug\netcoreapp3.1\ContactsApp.api.pdb
-C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.csproj.CoreCompileInputs.cache
-C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.dll
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.pdb
 C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.genruntimeconfig.cache
+C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.csprojAssemblyReference.cache
+C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.csproj.CoreCompileInputs.cache
+C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ivanc\source\repos\ContactsApp\ContactsApp.api\obj\Debug\netcoreapp3.1\ContactsApp.api.MvcApplicationPartsAssemblyInfo.cache

@@ -7,6 +7,8 @@ namespace ContactsApp.api.Entities
 {
     public class Contact
     {
+        public Guid Id { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
