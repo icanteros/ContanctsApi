@@ -7,6 +7,12 @@ namespace ContactsApp.api.Entities
 {
     public class Contact
     {
+        public Contact(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
         public Guid Id { get; set; }
 
         public string FirstName { get; set; }
@@ -17,6 +23,6 @@ namespace ContactsApp.api.Entities
 
         public string Email { get; set; }
 
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
