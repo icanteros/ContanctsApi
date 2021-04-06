@@ -35,7 +35,7 @@ namespace ContactsApp.api
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact Generator Piola", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Contact Generator Api", Version = "v1" });
             });
         }
 

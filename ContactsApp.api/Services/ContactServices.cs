@@ -25,17 +25,19 @@ namespace ContactsApp.api.Services
             return result;
         }
 
-        public string CreateContact()
+
+        public Contact CreateContact(Contact request)
         {
-            var generator = new DataGenerator();
+            var contactResponse = new Contact(request.FirstName, request.LastName);
 
-            var contact = generator.GenerateContacts(1).FirstOrDefault();
+            contactResponse.Company = request.Company;
+            contactResponse.Email = request.Email;
+            contactResponse.PhoneNumber = request.PhoneNumber;
 
-            _dataContext.Contacts.Add(contact);
+            _dataContext.Contacts.Add(contactResponse);
             _dataContext.SaveChanges();
 
-            return "Contacto creado.";
-
+            return contactResponse;
         }
 
         public string UpdateContact(Contact request)
@@ -70,16 +72,14 @@ namespace ContactsApp.api.Services
             return "Se borró con exito.";
         }
 
-        //
-        public List<Contact> GetContactsByCompany()
+
+        public List<Contact> GetContactsByCompany(string searchCompany)
         {
-            var listaCbC = _dataContext.Contacts
-               
-              .OrderBy(x => x.LastName)             
-              .ThenBy(x => x.FirstName)
-              .ToList();
-                
-            return listaCbC;
+            var listContactsByCompany = _dataContext.Contacts
+                .Where(x => x.FirstName.Contains(searchCompany))
+                .Distinct()
+                .ToList();
+            return listContactsByCompany;
         }
     }
 }

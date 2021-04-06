@@ -11,16 +11,17 @@ namespace ContactsApp.api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ContactController
+    public class ContactController : ControllerBase
     {
+
+        private readonly DataContext _dataContext;
 
         public ContactController(DataContext dataContext)
         {
             _dataContext = dataContext;
         }
                 
-        private readonly DataContext _dataContext;
-
+     
         [HttpGet]
         public List<Contact> GetAllContactsList()
         {
@@ -30,13 +31,13 @@ namespace ContactsApp.api.Controllers
             return result;
         }
 
-        [HttpGet]
-        public string CreateContact()
+        [HttpPost]
+        public Contact Post([FromBody] Contact request)
         {
             var service = new ContactServices(_dataContext);
-            var result = service.CreateContact();
+            var contact = service.CreateContact(request);
 
-            return result;
+            return contact;
         }
 
         [HttpPut]
@@ -60,16 +61,16 @@ namespace ContactsApp.api.Controllers
         }
 
         //intento de obtener una lista de contactos por empresa (te debo la paginación)
-        [HttpGet]
-        public List<Contact> GetContactsByCompany()
+        [HttpGet("get-by-cc")]
+        public List<Contact> GetContactsByCompany(string searchCompany)
         {
             ContactServices service = new ContactServices(_dataContext);
 
-            List<Contact> result = service.GetContactsByCompany();
+            List<Contact> result = service.GetContactsByCompany(searchCompany);
 
             return result;
         }
-
+        
 
 
     }
